@@ -1,13 +1,10 @@
 :root {
-    /* Your New Core Palette */
-    --primary: #1A2B47;       /* Midnight Navy */
-    --accent: #A2D149;        /* Lime Zest */
-    
-    /* Supporting Tones */
-    --neutral: #E2E8F0;       /* Lighter slate for borders/placeholders */
+    --primary: #1A2B47;
+    --accent: #A2D149;
+    --neutral: #E2E8F0;
     --white: #FFFFFF;
-    --bg-light: #F8FAFC;      /* Clean, modern off-white */
-    --joy-yellow: #A2D149;    /* Replaced yellow with Lime Zest for consistency */
+    --bg-light: #F8FAFC;
+    --joy-yellow: #A2D149;
 }
 
 html {
@@ -32,12 +29,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 10%;
-    background: rgba(255, 255, 255, 0.95); /* Slightly more opaque for contrast */
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(15px);
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 3px solid var(--accent); /* Added a lime accent line to navbar */
+    border-bottom: 3px solid var(--accent);
 }
 
 .logo {
@@ -57,7 +54,7 @@ body {
 .nav-links a {
     text-decoration: none;
     color: var(--primary);
-    font-weight: 700; /* Bolder for kids' accessibility */
+    font-weight: 700;
     font-size: 0.95rem;
     transition: color 0.3s;
 }
@@ -72,11 +69,13 @@ body {
     padding: 0.7rem 1.8rem;
     border-radius: 50px;
     transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
 }
 
 .cta-btn:hover {
     background: var(--accent);
-    color: var(--primary) !important; /* Navy text on Lime hover */
+    color: var(--primary) !important;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(162, 209, 73, 0.4);
 }
@@ -89,7 +88,6 @@ body {
     text-align: center;
     padding: 0 10%;
     border-radius: 0 0 100px 100px;
-    /* Hero gradient now uses a soft Lime tint */
     background: linear-gradient(180deg, rgba(162, 209, 73, 0.1) 0%, var(--bg-light) 100%);
     background-image: radial-gradient(var(--neutral) 0.8px, transparent 0.8px);
     background-size: 24px 24px;
@@ -106,22 +104,25 @@ body {
 }
 
 .hero-content h1 span {
-    color: var(--accent); /* Target "highlight" spans in your text */
+    color: var(--accent);
 }
 
 .hero-btns {
     display: flex;
     gap: 1.2rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .btn-primary {
     background: var(--accent);
-    color: var(--primary); /* Navy text on Lime for better readability */
-    padding: 1.2rem 3rem;
+    color: var(--primary);
+    padding: 1.1rem 2.5rem;
     text-decoration: none;
     font-weight: 800;
     border-radius: 50px;
+    display: inline-block;
+    text-align: center;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -133,30 +134,37 @@ body {
 }
 
 .btn-secondary {
-    border: 3px solid var(--primary); /* Thicker border for kid-friendly UI */
+    border: 3px solid var(--primary);
     color: var(--primary);
-    padding: 1.2rem 3rem;
+    padding: 1.1rem 2.5rem;
     text-decoration: none;
     font-weight: 700;
     border-radius: 50px;
+    display: inline-block;
+    text-align: center;
     transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: var(--white);
 }
 
 .mission-card:hover {
     transform: translateY(-15px);
-    border-bottom: 8px solid var(--accent); /* Lime border on hover */
+    border-bottom: 8px solid var(--accent);
     box-shadow: 0 25px 60px rgba(162, 209, 73, 0.15);
 }
 
 .stat-item h3 {
     font-size: 4rem;
-    color: var(--accent); /* Big lime numbers */
+    color: var(--accent);
     margin-bottom: 0.5rem;
     font-weight: 800;
 }
 
 .impact-section {
-    background: var(--primary); /* Dark navy background for the impact section */
+    background: var(--primary);
     color: var(--white);
     border-radius: 60px;
     margin: 0 3rem;
@@ -303,10 +311,9 @@ body {
     justify-content: center;
     font-size: 2.5rem;
     color: var(--primary);
-    border: 3px solid var(--accent); /* Added brand border */
+    border: 3px solid var(--accent);
 }
 
-/* NEW: Team actions area for centering buttons */
 .team-actions {
     margin-top: 3.5rem;
     display: flex;
@@ -315,7 +322,6 @@ body {
     flex-wrap: wrap;
 }
 
-/* NEW: Hover override for Volunteer button in team area */
 .team-actions .btn-primary:hover {
     background-color: var(--primary) !important;
     color: var(--white) !important;
@@ -379,9 +385,8 @@ body {
     box-shadow: 0 35px 70px rgba(26, 43, 71, 0.13);
 }
 
-/* Upcoming Project Styling */
 .upcoming-project {
-    border: 2px dashed var(--accent) !important; /* Thickened and clarified */
+    border: 2px dashed var(--accent) !important;
     background: rgba(162, 209, 73, 0.05);
 }
 
@@ -397,9 +402,8 @@ body {
     margin-bottom: 10px;
 }
 
-/* Mega Footer Styling */
 .footer {
-    background-color: var(--primary); /* Midnight Navy */
+    background-color: var(--primary);
     color: white;
     padding: 80px 10% 40px;
     margin-top: 50px;
@@ -413,7 +417,7 @@ body {
 }
 
 .footer-column h4 {
-    color: var(--accent); /* Lime Zest */
+    color: var(--accent);
     margin-bottom: 20px;
     font-size: 1.2rem;
 }
@@ -458,12 +462,6 @@ body {
     opacity: 0.6;
 }
 
-@media (max-width: 768px) {
-    .footer-container {
-        grid-template-columns: 1fr;
-    }
-}
-
 .card-content {
     padding: 2.5rem;
 }
@@ -490,6 +488,7 @@ body {
     color: var(--primary);
     font-weight: 700;
     text-decoration: none;
+    text-align: center;
     transition: all 0.3s ease;
 }
 
@@ -526,97 +525,37 @@ body {
 }
 
 .btn-large {
-    padding: 1.35rem 3.2rem;
-    font-size: 1.05rem;
+    padding: 1.3rem 3rem;
+    font-size: 1.1rem;
+    text-align: center;
+    display: inline-block;
 }
-
-/* Redundant footer section removed to favor Mega Footer */
 
 @media (max-width: 980px) {
-    .navbar {
-        padding: 1.2rem 6%;
-    }
-
-    .hero {
-        padding: 0 6%;
-    }
-
-    .section {
-        padding: 4.5rem 6%;
-    }
-
-    .projects-container {
-        padding: 4.5rem 6%;
-    }
-
-    .donate-section {
-        padding: 4.5rem 6%;
-    }
+    .navbar { padding: 1.2rem 6%; }
+    .hero { padding: 0 6%; }
+    .section, .projects-container, .donate-section { padding: 4.5rem 6%; }
 }
 
-@media (max-width: 700px) {
-    .navbar {
-        flex-wrap: wrap;
-        gap: 1rem;
-        padding: 1rem 4%;
+@media (max-width: 768px) {
+    .footer-container { grid-template-columns: 1fr; }
+    .hero { height: auto; padding: 6rem 4% 8rem; }
+    .hero-content h1 { font-size: 2.2rem; }
+    .btn-primary, .btn-secondary, .btn-large, .btn-minimal, .cta-btn {
+        width: 100%;
+        max-width: 400px;
+        padding: 1rem 1.5rem;
     }
-
-    .nav-links {
-        justify-content: center;
-        gap: 1.1rem;
-    }
-
-    .hero {
-        height: auto;
-        padding: 4rem 4rem 6rem;
-    }
-
-    .hero-content h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    .btn-primary,
-    .btn-secondary {
-        padding: 0.9rem 2.2rem;
-    }
-
-    .mission-grid {
+    .hero-btns, .team-actions {
         flex-direction: column;
+        align-items: center;
     }
-
-    .stats-bar {
-        flex-direction: column;
-    }
+    .mission-grid, .stats-bar { flex-direction: column; }
+    .impact-section { margin: 0 1rem; border-radius: 40px; }
 }
 
 @media (max-width: 500px) {
-    .logo {
-        font-size: 1.2rem;
-    }
-
-    .nav-links {
-        gap: 0.9rem;
-    }
-
-    .nav-links a {
-        font-size: 0.85rem;
-    }
-
-    .hero-content h1 {
-        font-size: 1.9rem;
-    }
-
-    .btn-primary,
-    .btn-secondary {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .btn-primary {
-        padding: 1rem 0;
-    }
+    .navbar { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    .nav-links { gap: 1rem; }
+    .logo { font-size: 1.2rem; }
 }
