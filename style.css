@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+
 :root {
     --primary: #1A2B47;
     --accent: #A2D149;
@@ -7,16 +9,17 @@
     --joy-yellow: #A2D149;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Roboto, -apple-system, sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     background: linear-gradient(135deg, var(--bg-light) 0%, var(--white) 100%);
@@ -283,6 +286,10 @@ body {
     color: var(--accent);
     margin-bottom: 0.5rem;
     font-weight: 800;
+}
+
+.stat-number::after {
+    content: "%";
 }
 
 .impact-section {
