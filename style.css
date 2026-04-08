@@ -7,6 +7,36 @@
     --white: #FFFFFF;
     --bg-light: #F8FAFC;
     --joy-yellow: #A2D149;
+
+  
+  /* --primary: #FFD700;
+  --accent: #FF8C00;
+  --neutral: #2F3E46;
+  --white: #FFFFFF;
+  --bg-light: #FFFDF5;
+  --joy-yellow: #FFD700; */
+
+/* 
+  --primary: #FFBF00;
+  --accent: #FF4D00;
+  --neutral: #E0F2F1;
+  --white: #FFFFFF;
+  --bg-light: #0A192F;
+  --joy-yellow: #FFBF00; */
+
+  /* --primary: #FFB347;
+  --accent: #FFCCBB;
+  --neutral: #708090;
+  --white: #FFFFFF;
+  --bg-light: #FFFFFF;
+  --joy-yellow: #FFB347; */
+
+  /* --primary: #DAA520;
+  --accent: #FF4F00;
+  --neutral: #1B4332;
+  --white: #FFFFFF;
+  --bg-light: #F8F9FA;
+  --joy-yellow: #DAA520; */
 }
 
 * {
