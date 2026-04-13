@@ -924,7 +924,6 @@ body {
     width: 100%;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     #volunteer-registration {
         padding: 4rem 5%;
@@ -946,4 +945,103 @@ body {
     .volunteer-form-card h2 {
         font-size: 2rem;
     }
+}
+
+/* Donations page */
+.donation-hero {
+    padding-top: 10px; 
+    min-height: 100vh;
+}
+
+.donation-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .donation-grid { grid-template-columns: 1fr; }
+}
+
+.donation-form-container {
+    padding: 40px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.glass-input {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    color: var(--primary);
+    outline: none;
+    transition: 0.3s;
+}
+
+.glass-input:focus {
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.amount-presets {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.preset-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--primary);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.preset-btn:hover, .preset-btn.active {
+    background: var(--accent);
+    color: var(--primary);
+}
+
+.progress-container {
+    background: rgba(255, 255, 255, 0.1);
+    height: 8px;
+    border-radius: 4px;
+    margin: 15px 0 5px;
+}
+
+.progress-bar {
+    background: var(--accent);
+    height: 100%;
+    border-radius: 4px;
+}
+
+.progress-label {
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+.info-card i {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 15px;
 }
