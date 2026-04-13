@@ -59,3 +59,25 @@ fadeElements.forEach(el => {
     el.style.transition = 'all 0.8s ease-out';
     revealObserver.observe(el);
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const observerOptions = {
+        threshold: 0.15 // Trigger when 15% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                // Un-comment the line below if you want the animation 
+                // to repeat every time you scroll up and down:
+                // observer.unobserve(entry.target); 
+            }
+        });
+    }, observerOptions);
+
+    // Apply the observer to all elements with the 'reveal' class
+    const revealElements = document.querySelectorAll('.reveal');
+    revealElements.forEach(el => observer.observe(el));
+});
