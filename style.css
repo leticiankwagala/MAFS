@@ -41,11 +41,18 @@ body {
     z-index: 1000;
 }
 
-.logo {
+.logo{
     font-size: 1.4rem;
     font-weight: 800;
     letter-spacing: -0.5px;
     color: var(--primary);
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .nav-links {
