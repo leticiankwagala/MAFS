@@ -1,6 +1,22 @@
 const navbar = document.querySelector('.navbar');
+const menuToggle = document.querySelector('#menuToggle');
+const navLinks = document.querySelector('#navLinks');
 const counters = document.querySelectorAll('.stat-item h3');
 const fadeElements = document.querySelectorAll('.mission-card, .project-card');
+
+if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+        const isOpen = navbar.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navbar.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+}
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="icon" type="image/png" sizes="32x32" href="assets/icon.jpeg"> -->
+    <link rel="icon" type="" sizes="32x32" href="assets/icon.jpeg">
     <title>Make a Face Smile | Restoring Hope & Dignity</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -12,15 +12,23 @@
 
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar" id="siteNavbar">
         <div class="logo">
-            <img src="assets/logo.jpeg" alt="Make a Face Smile Logo" class="logo"/>
+            <img src="assets/logo.jpeg" alt="Make a Face Smile Logo" class="logo" />
         </div>
-        <ul class="nav-links">
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#impact">Impact</a></li>
             <li><a href="programs.html">Programs</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="donate.html" class="cta-btn">Donate</a></li>
         </ul>
     </nav>
@@ -30,28 +38,28 @@
             <source src="assets/sapatus.mp4" type="video/mp4">
         </video>
         <div class="hero-content">
-            <h1>Restoring Hope, One <span>Smile</span> at a Time.</h1>
-            <p>Empowering communities through transparent, faith-led compassion and professional excellence.</p>
+            <h1>A Living Story of <span>Dignity</span>, Care, and Restored Smiles.</h1>
+            <p>Every meal shared, every shoe placed, every girl protected — this is the everyday editorial of hope in motion across Uganda.</p>
             <div class="hero-btns">
-                <a href="donate.html" class="btn-primary">Start Giving</a>
-                <a href="#impact" class="btn-secondary">View Our Impact</a>
+                <a href="donate.html" class="btn-primary">Join the Story</a>
+                <a href="#impact" class="btn-secondary">See the Impact</a>
             </div>
         </div>
     </header>
 
     <section id="about" class="section about-section">
-        <div class="container">
-            <div class="identity-header">
-                <h2 class="section-subtitle">Our Heart</h2>
-                <p class="identity-text">
-                    Rooted in the biblical call to love our neighbors as ourselves, Make a Face Smile is a collective of
-                    believers
-                    dedicated to the ministry of restoration. We believe that honoring God requires excellence in our
-                    craft, we use professional precision to deliver Christ-led compassion to the marginalized.
-                </p>
-            </div>
+        <div class="container about-split">
+            <div class="about-copy">
+                <div class="identity-header">
+                    <h2 class="section-subtitle">The Story Behind the Mission</h2>
+                    <p class="identity-text">
+                        Make a Face Smile is more than a charity campaign. It is a living story of faith in action — where
+                        care is practical, dignity is non-negotiable, and every act of support becomes a chapter in restoring
+                        hope to communities that deserve to be seen, protected, and celebrated.
+                    </p>
+                </div>
 
-            <div class="mission-grid zoom-in delay-1">
+                <div class="mission-grid zoom-in delay-1">
                 <div class="mission-card glass">
                     <div class="card-icon">
                         <i class="fas fa-bullseye" style="color: var(--primary); font-size: 2.5rem;"></i>
@@ -70,6 +78,15 @@
             </div>
 
 
+            </div>
+
+            <div class="about-image-panel">
+                <img src="assets/IMG_6213.jpeg" alt="Community outreach and charity work">
+                <div class="image-overlay-caption">Restoration in action</div>
+            </div>
+        </div>
+
+        <div class="container">
             <div>
                 <h2 class="section-title">Our Core Values.</h2>
                 <div class="values-grid">
@@ -96,25 +113,33 @@
             </div>
 
             <div class="team-section">
-                <h2 class="section-title">The Faces Behind the Mission</h2>
+                <h2 class="section-title">The People Carrying the Story</h2>
                 <div class="team-grid">
                     <div class="team-member">
-                        <div class="member-photo glass" style="background: linear-gradient(135deg, #F6A576, #E86B28);"></div>
+                        <div class="member-photo glass">
+                            <img src="assets/IMG_6219.jpeg" alt="Coulten Kirabo portrait">
+                        </div>
                         <h4>Coulten Kirabo</h4>
                         <p>Creative Director</p>
                     </div>
                     <div class="team-member">
-                        <div class="member-photo glass" style="background: linear-gradient(135deg, #F6A576, #E86B28);"></div>
+                        <div class="member-photo glass">
+                            <img src="assets/IMG_6220.jpeg" alt="Tonny Katende portrait">
+                        </div>
                         <h4>Tonny Katende</h4>
                         <p>Director of Operations</p>
                     </div>
                     <div class="team-member">
-                        <div class="member-photo glass" style="background: linear-gradient(135deg, #F6A576, #E86B28);"></div>
+                        <div class="member-photo glass">
+                            <img src="assets/IMG_6327.jpeg" alt="Leticia Kwagala portrait">
+                        </div>
                         <h4>Leticia Kwagala</h4>
                         <p>Volunteer Coordinator</p>
                     </div>
                     <div class="team-member">
-                        <div class="member-photo glass" style="background: linear-gradient(135deg, #F6A576, #E86B28);"></div>
+                        <div class="member-photo glass">
+                            <img src="assets/IMG_8785.jpeg" alt="Blair A portrait">
+                        </div>
                         <h4>Blair A</h4>
                         <p>Program Coordinator</p>
                     </div>
@@ -129,7 +154,7 @@
     </section>
 
     <section id="impact" class="section impact-section">
-        <h2 class="section-title">Our Impact</h2>
+        <h2 class="section-title">Impact in Motion</h2>
         <div class="stats-bar glass">
             <div class="stat-item">
                 <h3 class="stat">200+</h3>
@@ -147,29 +172,38 @@
     </section>
 
     <section class="projects-container">
-        <h2 class="section-title">Current Projects</h2>
+        <h2 class="section-title">Featured Editions</h2>
         <div class="projects-grid">
             <article class="project-card glass reveal slide-up">
+                <div class="project-image">
+                    <img src="assets/IMG_6213.jpeg" alt="Food relief efforts in community">
+                </div>
                 <div class="card-content">
-                    <h3>Food Relief</h3>
-                    <p>Directly answering Christ’s call to feed the hungry by providing nutrition to urban slums.</p>
+                    <h3>The Daily Bread Issue</h3>
+                    <p>Direct food support for families navigating hunger, instability, and the everyday weight of survival.</p>
                     <a href="programs.html" class="btn-minimal">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </article>
 
             <article class="project-card glass">
+                <div class="project-image">
+                    <img src="assets/IMG_8824.jpeg" alt="Children receiving shoes and school support">
+                </div>
                 <div class="card-content">
-                    <h3>Sapatu</h3>
-                    <p>Removing barriers to education by providing shoes and school requirements for children.</p>
+                    <h3>Walk in Truth</h3>
+                    <p>Helping children step into school with confidence by providing shoes, essentials, and the dignity of being prepared.</p>
                     <a href="programs.html" class="btn-minimal">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </article>
 
             <article class="project-card glass highlight">
+                <div class="project-image">
+                    <img src="assets/IMG_8929.jpeg" alt="Essential hygiene support for girls">
+                </div>
                 <div class="card-content">
                     <span class="status-badge">New Launch</span>
                     <h3>Esther's Bucket</h3>
-                    <p>Restoring dignity through essential hygiene kits for girls to keep them in school.</p>
+                    <p>Practical care for girls in crisis — hygiene support that protects health, confidence, and full participation in school.</p>
                     <a href="programs.html" class="btn-minimal">View Goals <i class="fas fa-arrow-right"></i></a>
                 </div>
             </article>
@@ -204,11 +238,50 @@
         </div>
     </section>
 
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-intro">
+                <h2 class="section-title">Smiles in Action</h2>
+                <p>Moments from outreach, shared meals, and community restoration that remind us why this mission exists.</p>
+            </div>
+            <div class="gallery-grid">
+                <figure class="gallery-card tall">
+                    <img src="assets/IMG_6213.jpeg" alt="Community support with smiling children">
+                    <figcaption>Children & Community</figcaption>
+                </figure>
+                <figure class="gallery-card wide">
+                    <img src="assets/IMG_6219.jpeg" alt="A memorable outreach moment">
+                    <figcaption>Outreach Moments</figcaption>
+                </figure>
+                <figure class="gallery-card">
+                    <img src="assets/IMG_6220.jpeg" alt="Warm smiles from the program team">
+                    <figcaption>Faces of Hope</figcaption>
+                </figure>
+                <figure class="gallery-card">
+                    <img src="assets/IMG_6327.jpeg" alt="Shared joy in the field">
+                    <figcaption>Shared Joy</figcaption>
+                </figure>
+                <figure class="gallery-card tall">
+                    <img src="assets/IMG_8785.jpeg" alt="A meaningful moment of care">
+                    <figcaption>Care in Action</figcaption>
+                </figure>
+                <figure class="gallery-card wide">
+                    <img src="assets/IMG_8824.jpeg" alt="Photo of the mission in progress">
+                    <figcaption>Mission in Progress</figcaption>
+                </figure>
+                <figure class="gallery-card">
+                    <img src="assets/IMG_8929.jpeg" alt="Community members interacting during service">
+                    <figcaption>Service & Support</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-column">
                 <div class="logo">Make a Face Smile</div>
-                <p>A faith-led initiative dedicated to restoration and the pursuit of smiles across marginalized
+                <p>A faith-led initiative dedicated <br>to restoration and the pursuit of <br>smiles across marginalized
                     communities.</p>
             </div>
             <div class="footer-column">
@@ -227,6 +300,14 @@
                     <a href="https://www.tiktok.com/@make.a.face.smile" target="_blank"><i class="fab fa-tiktok"></i>
                         TikTok</a>
                     <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> info@makeafacesmile.org</a>
+                    <a href="#"><i class="fa fa-phone-square" aria-hidden="true"></i> (256) 787-774915</a>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Wellspring Bweyogerere.</a>
                 </div>
             </div>
         </div>
